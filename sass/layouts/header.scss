@@ -1,0 +1,18 @@
+header{
+    height: 63px;
+    & .img_menu{
+        width: 162px;
+        height: 44px;
+        margin: auto;
+        display: block;
+    }
+}
+
+.icone-header{
+    position: relative;
+    top: 26px;
+    left: 23px;
+    height: 17px;
+    width: 16px;
+    color: rgba(53, 53, 53, 1);
+}

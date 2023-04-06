@@ -1,0 +1,155 @@
+.menu{
+    background-color: #F7F7F7;
+}
+.menu-img{
+    display: flex;
+    flex-direction: column;   
+}
+
+.carte{
+    position: relative;
+    bottom: 13px;
+    display: flex;
+    flex-direction: column;
+}
+
+.menu-title{
+    display: flex;
+    padding-left: 17px;
+    padding-right: 17px;
+    border-top-right-radius: 30px;
+    border-top-left-radius: 30px;
+    position: relative;
+    bottom: 55px;
+    background: #F7F7F7;
+    gap: 30px;
+    justify-content: center;
+}
+
+
+h9{
+
+    font-weight: 300;
+    font-size: 16px;
+    margin-left: 13px;
+    border-bottom: 3px solid #99E2D0;
+    display: block;
+    width: 40px;
+    padding-bottom: 5px;
+    margin-bottom: 12px;
+}
+
+.menu-choix{
+    gap: 12px;
+    display: grid;
+    margin-bottom: 40px;
+}
+.choix{
+    width: 349px;
+    height: 69px;
+    background: #FFFFFF;
+    box-shadow: 0px 4.01149px 15.0431px rgba(0, 0, 0, 0.1);
+    margin: auto;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: relative;
+    & strong{
+        padding-bottom: 5px;
+        margin-left: 15px;
+        font-size: 18px;
+    }
+    & p{
+        margin: 0;
+        margin-left: 15px;
+        
+    }
+    &:hover .prix{
+        width: 100%;
+    }
+    &:hover .prix p{
+        text-overflow: ellipsis;
+        overflow: hidden;
+    }
+    &:hover .prix strong{
+        right: 69px;
+    }
+    &:hover .valide{
+        opacity: 1;
+    }
+}
+.valide{
+    position: absolute;
+    width: 59px;
+    height: 69px;
+    left: 290px;
+    top: 0px;
+    background: #99E2D0;
+    border-radius: 0px 15px 15px 0px;
+    opacity: 0;
+    & .checked{
+        color: white;
+        font-size: 20px;
+        position: relative;
+        top: 25px;
+        left: 20px;
+    }
+}
+.prix {
+    display: flex;
+    justify-content: space-between;
+    font-size: 15px;
+    padding-right: 15px;
+    margin-left: 15px;
+    & p {
+        width: 200px;
+        white-space: nowrap;
+        margin: 0;
+      }
+    & strong{
+        font-size: 15px;
+        font-weight: 700;
+        color: #353535;
+        position: absolute;
+        bottom: 7px;
+        right: 15px;
+    }
+}
+
+////////////////*Animation*/////////////
+
+.anim-entrées +.bloc{
+    animation: entrées  0.8s ease-out forwards;
+    opacity: 0;
+
+}
+
+@keyframes entrées {
+    0%{
+        transform: translateX(-100%);
+       
+    }
+    100%{
+       opacity: 1;
+    }
+}
+
+.anim-plats +.bloc{
+    animation: plats  0.8s ease-out 1s forwards;
+    opacity: 0;
+}
+
+@keyframes plats {
+    0%{
+        transform: translateX(100%); 
+    }
+    100%{
+        opacity: 1;
+    }
+}
+
+.anim-desserts +.bloc{
+    animation: entrées  0.8s ease-out 2s forwards;
+    opacity: 0;
+}

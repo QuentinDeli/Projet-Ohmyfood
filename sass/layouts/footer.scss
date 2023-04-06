@@ -1,0 +1,38 @@
+footer{
+    background: #353535;
+    color: white;
+    padding-left: 25px;
+    height: 197px;
+    & h3{
+        font-family: 'Shrikhand';
+        width: 137px;
+        height: 27px;
+        padding-top: 22px;
+        margin-top: 0;
+    }
+}
+
+.footer-menu{
+    gap: 7px;
+    display: flex;
+    flex-direction: column;
+    &_1{
+        display: flex;
+        align-items: center;
+        gap: 11px;
+        height: 19px;
+    }
+    &_2 p{
+        margin: 0;
+        font-weight: 400;
+    }
+}
+
+.footer-menu_2 a{
+    color: white;
+    font-weight: 400;
+}
+
+.icone-footer{
+    color: white;
+}

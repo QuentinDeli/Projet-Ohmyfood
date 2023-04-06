@@ -1,0 +1,71 @@
+/***************** Nav **********************/
+@media screen and (max-width: 2560px) and (min-width: 768px) {
+    .nav-loc-title h2{
+        font-size: 40px;
+        margin-bottom: 18px;
+    }
+    .nav-loc-title p{
+        width: 531px;
+        margin-top: 18px;
+        font-size: 18px;
+        display: contents;
+    }
+    br{
+        display: none;
+    }
+    .nav-fonction{
+        height: 262px;
+    }
+    .nav-fonction .nav-fonction-title{
+        padding-left: 185px;
+        padding-top: 50px;
+        margin-bottom: 28px;
+        margin-top: 0;
+    }
+    .nav-fontion-button{      
+        flex-direction: row;
+        padding: 0;
+        justify-content: center;
+        & .btn{
+            margin: 0;
+        }
+    }
+}
+/***************** Main **********************/
+@media screen and (max-width: 2560px) and (min-width: 768px) {
+    main .main-title{
+        margin-left: 185px;
+        margin-top: 50px;
+        padding-bottom: 28px;
+        margin-top: 0;
+    }
+    main .main-resto{
+        display: grid;
+        grid-template-columns: 490px 490px;
+        grid-template-rows: 251px 251px;
+        justify-content: center;
+        margin-left: 0;
+        gap: 50px;
+    }
+    .main-resto .resto{
+        display: flex;
+    }
+}
+/***************** Footer **********************/
+@media screen and (max-width: 2560px) and (min-width: 768px) {
+    footer{
+        display: flex;
+        justify-content: flex-end;
+        height: 114px;
+        & h3{
+            order: 2;
+            padding: 45px 71px 0 71px;
+        }
+        .footer-menu{
+            flex-direction: row;
+            gap: 40px;
+            height: 19px;
+            margin: 47.5px 0 47.5px 0;
+        }
+    }
+}

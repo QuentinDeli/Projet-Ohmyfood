@@ -1,0 +1,41 @@
+/******************************************** Menu ***************************************************/
+/***************** img **********************/
+@media screen and (max-width: 2560px) and (min-width: 768px) {
+    .menu{
+        width: 1055px;
+        position: relative;
+        left: 192px;
+        background-color: #F7F7F7;
+    }
+    .menu .carte{
+        padding-left: 192px;
+    }
+    .menu-img img{
+        height: 500px;
+        object-fit: cover;
+    }
+    .menu-main .menu-title{
+        width: 1055px;
+        margin: auto;
+        justify-content: center;
+        padding: 0;
+    }
+    .menu-entrées-title h9{
+        justify-content: center;
+    }
+    .menu-choix .choix{
+        width: 634px;
+        margin: 0;
+    }
+    .carte .button-menu{
+        margin: 0;
+        margin-left: 200px;
+        margin-bottom: 40px;
+    }
+    .valide{
+        left: 575px;
+    }
+    .prix p{
+        width: 100%;
+    }
+}
